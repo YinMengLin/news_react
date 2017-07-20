@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 
 
 import MobileNewsHeader from '../news_header/MobileNewsHeader';
-import NewsFooter from '../news_footer/NewsFooter';
+import NewsFooter from '../news_footer/news_footer';
 
 
 //移动端样式
