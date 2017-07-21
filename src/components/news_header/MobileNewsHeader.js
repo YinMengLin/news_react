@@ -32,9 +32,9 @@ class MobileNewsHeader extends Component {
 
     componentWillMount = () => {
         //读取保存的数据
-        const userJson = localStorage.getItem('user')
+        const userJson = localStorage.getItem('user');
         if (userJson) {
-            const {userId, username} = JSON.parse(userJson)
+            const {userId, username} = JSON.parse(userJson);
             //更新状态
             this.setState({userId, username})
         }
@@ -88,7 +88,7 @@ class MobileNewsHeader extends Component {
         const {getFieldDecorator} = this.props.form;
 
         const userItem = username
-            ? <Link to='/usercenter'>
+            ?<Link to='/usercenter'>
                 <Icon type="inbox"/>
             </Link>
             : <Icon type="setting" onClick={this.setModalVisible.bind(this, true)}/>
